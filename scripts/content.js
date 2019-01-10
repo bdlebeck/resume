@@ -23,7 +23,8 @@ var career = {
 
 			accomplishments: [
 				{ "accomplishment" : "Frontend designer on the software engineering team that produced Surescript's <a href='https://surescripts.com/inform-care-decisions/insights-alerts/' target='new'>Medication Management for Adherence</a> and <a href='http://surescripts.com/enhance-prescribing/' target='new'>Specialty Patient Enrollment</a>." },
-				{ "accomplishment" : "Design and development of dynamic HTML/JS software prototypes demoed to leading national pharmacy chains and health insurance companies." }
+				{ "accomplishment" : "Design and development of dynamic HTML/JS software prototypes demoed to leading national pharmacy chains and health insurance companies." },
+				{ "accomplishment" : "Member of the UI Line Architecture Group in charge of designing UI components for a consistent look and feel across products." }
 			],
 			duties: [
 				{ "duty" : "HTML, CSS3 architecture" },
