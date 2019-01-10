@@ -1,0 +1,24 @@
+<div class="">
+	<h2>Education</h2>
+	
+	{{#degrees}}
+	<article class="card">
+	
+		<div class="card-header">
+			<h4 class="card-title">
+				{{ title }}
+			</h4>
+			<span class="card-date">{{ date }}</span>
+		</div>
+
+		<span class="card-subtitle">
+			{{ subtitle }}
+		</span>
+
+		<span class="card-degree">{{ degree }}</span>
+
+		<p class="card-description hidden">{{ description }}</p>
+
+	</article>
+	{{/degrees}}
+</div>

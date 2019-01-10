@@ -1,0 +1,26 @@
+<div>
+	<h2>Favorite Projects</h2> 
+
+	{{ #items }}
+	<article class="card card-hover" page="{{id}}" id="{{ id }}">
+
+		<div class="card-header">
+			<h4 class="card-title">
+				{{ projectTitleLong }}
+			</h4>
+		</div>	
+	
+	   	<p class="card-description">{{ intro }}</p>
+
+	</article>	
+	{{ /items }}
+</div>
+
+<script>
+	$( ".projects .card" ).click(function() {
+		//const item = this.id;
+		var item = this.getAttribute("page");
+		localStorage.setItem('current', item); 
+		window.location='details-project.html'
+	});	
+</script>

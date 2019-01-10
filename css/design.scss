@@ -1,0 +1,230 @@
+@import 'variables';
+@import 'mixins';
+@import url('details.css');
+
+html,
+body {
+	background-color: $background-color;
+	color: $font-color;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	height: 100vh;
+}
+
+a, a.visited {
+	color: blue;
+}
+
+main {
+	background-color: #ffffff; 
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 0em;
+}
+
+
+@media only screen and (max-width: 800px) {
+	main {
+		padding: 1rem;
+	}
+}
+
+/* ----------- */
+.about {
+	.column {	
+		flex: 1;
+		margin: 1rem;
+	}
+	.about__intro {
+		font-size: 1.4rem;
+		line-height: 2.0rem;
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		/*max-width: 40rem;*/
+		padding: 0;
+	}
+	li {
+		border-bottom: 1px solid #eeeeee;
+		line-height: 2rem;
+		list-style-type: none;
+	}
+	strong {
+		display: inline-block;
+		font-weight: 500;
+		width: 10rem; 
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.about.row  {
+		flex-direction: column;
+	}
+	.about .column:nth-of-type(2) {
+		order: -1;
+	}	
+}	
+
+
+/* ----------- */
+.me {
+	font-size: 1.2rem;
+	padding: 1rem;
+	
+	h1 {
+	}	
+	span {
+		display: block; 
+	}	
+	.my-name { 
+		margin: 0;
+	}
+	.my-title { 
+		margin: 0;
+	}
+	.my-city { 
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.career-project.row  {
+		flex-direction: column;
+	}
+}	
+
+
+/* ----------- */
+.projects {
+	&.column {	
+		flex: 1;
+		margin: 1rem;
+	}	
+}
+
+
+/* ----------- */
+.career {
+	&.column {	
+		flex: 1;
+		margin: 1rem;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.education-skill.row  {
+		flex-direction: column;
+	}
+}	
+
+
+/* ----------- */
+.education {
+	&.column {	
+		flex: 1;
+		margin: 1rem;
+	}	
+}
+
+
+/* ----------- */
+.skills {
+	&.column {	
+		flex: 1;
+		margin: 1rem;
+		min-width: 10rem;
+	}	
+}
+@media only screen and (max-width: 800px) {
+	.skills.row  {
+		/*flex-direction: column;*/
+	}
+}
+
+
+/* ----------- */
+.card {
+	background-color: #ffffff;
+	margin: 0 0 1.5rem 0;
+	/*max-width: 30rem;*/
+	padding: 0;
+	overflow: hidden;
+
+	.card-header {
+		@include flexbox();
+		@include flex-direction(row);
+		justify-content: space-between;
+	}
+	.card-title {
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin: 0;
+		padding: 0; 
+		text-transform: none;
+	}
+	.card-subtitle {
+		display: block;
+	}	
+	.card-date {
+		background-color: $primary;
+		border-radius: 10px;
+		color: #ffffff;
+		display: block;
+		font-size: .8rem;
+		padding: .2rem .4rem;
+		text-align: center;
+	}
+	.card-degree {
+		color: $primary;
+		display: block;
+		margin: .2rem 0;
+	}	
+	.card-jobtitle {
+		color: $primary;
+		display: block;
+		font-size: 1.0rem;
+	}
+	.card-description {
+		font-size: 1.0rem;
+		font-weight: 300;
+		margin: 0;
+		line-height: 1.4;
+	}
+	.card__accomplishments {
+		margin: 1rem 0;
+		padding: 0em;
+	}
+	.card__duties {
+		margin: 1rem 0;
+		padding: 0em;
+	}	
+
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			line-height: 1.4em;
+			list-style-type: none;
+		}
+	}
+
+	ul.card__links {
+		margin: 1rem 0;
+	}		
+	ul.card__links li {
+		padding: 0;
+		margin: .4rem;
+	}
+	a, a:visited {
+		color: $primary;
+		text-decoration: underline;
+	}
+}
+
+.card-hover:hover {
+	cursor: pointer;
+}	
+
+
