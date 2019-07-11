@@ -17,6 +17,39 @@ main {
   max-width: 400px;
   padding: 0em; }
 
+.navigation {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.navigation li:first-child {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-right: auto; }
+
+.navigation li {
+  display: block;
+  text-align: center; }
+
+.navigation .logo {
+  margin-right: auto;
+  margin-left: auto; }
+
+.navigation a {
+  color: navy;
+  display: block;
+  font-weight: 400;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: .5s; }
+
+.navigation a:hover {
+  background-color: gold;
+  color: black; }
+
 @media only screen and (max-width: 800px) {
   main {
     padding: 1rem; } }
