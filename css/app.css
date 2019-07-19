@@ -1,98 +1,76 @@
-@import url("design.css");
-html,
-body {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
+@import url("normalize.css");
+body { background-color: #ffffff; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  margin: 0;
-  padding: 0; }
+html, body { color: #555555; font-family: 'Raleway', sans-serif; font-size: 1rem; font-weight: 300; }
 
-h1 {
-  font-size: 2.2rem;
-  margin: 0 0 2.0rem 0; }
+a, a.visited { color: blue; }
 
-h2 {
-  font-size: 1.8rem;
-  margin: 1.0rem 0; }
+main { background-color: transparent; margin: 0 auto; margin-top: 80px; }
 
-h3 {
-  font-size: 1.4rem;
-  margin: .5rem 0; }
+nav .navigation { align-items: center; background-color: #444444; display: flex; height: 80px; list-style-type: none; margin: 0; padding: 0; position: fixed; top: 0; width: 100%; }
+nav .navigation li:first-child { font-size: 1.4rem; margin-left: 10px; margin-right: auto; }
+nav .navigation li { color: #ffffff; display: block; text-align: center; }
+nav .navigation .logo { margin-right: auto; margin-left: auto; }
+nav .navigation a { color: #ffffff; cursor: pointer; display: block; font-weight: 400; padding: 16px 20px; text-decoration: none; transition: .5s; }
+nav .navigation a:hover { background-color: gold; color: black; }
 
-h4 {
-  font-size: 1.2rem; }
+.scrollpage { background-color: #ffffff; padding: 3rem 3rem 0 3rem; height: 88vh; }
 
-h5 {
-  font-size: 1.0rem; }
+.scrollpage:nth-of-type(even) { background-color: #bbe6ff; }
 
-h6 {
-  font-size: .9rem; }
+.about-page, .career-page, .strength-page, .projects-page, .education-page, .skills-page { padding: 2rem 3rem; }
 
-a, a:visited, a:active {
-  color: #14a8fc;
-  text-decoration: none; }
+.about-page ul { padding: 0; }
+.about-page li { line-height: 1.4rem; list-style-type: none; }
+.about-page strong { display: inline-block; font-weight: 600; width: 10rem; }
 
-a:hover {
-  color: #027cc1;
-  text-decoration: none; }
+.skills-page .strengths-container { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; }
+.skills-page .strengths-container ul { font-size: 1.4rem; margin: 0; padding: 0; line-height: 2.0rem; list-style-type: none; }
 
-.show {
-  display: block;
-  -webkit-animation: fadeIn .1s;
-  animation: fadeIn .1s; }
+.career-page section { cursor: pointer; margin-bottom: 1rem; }
+.career-page section p { font-size: 1.4rem; }
+.career-page section div:hover { background-color: aliceblue; }
 
-.hidden {
-  display: none;
-  -webkit-animation: fadeIn .1s;
-  animation: fadeIn .1s; }
+.career__list { background-color: #ffffff; margin: 0; padding: 0; }
 
-.row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
+.career__highlights { webkit-animation: fadeIn .6s; animation: fadeIn .6s; display: inline-block; vertical-align: top; }
 
-.flex-column {
-  -webkit-flex-direction: vertical;
-  -moz-flex-direction: vertical;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
+.details .pagination { text-align: center; }
+.details .pagination .page { background-color: #14a8fc; border: 0px solid #038cda; border-radius: 50%; cursor: pointer; display: inline-block; margin: 0 .3rem; width: 1.1rem; height: 1.1rem; }
+.details .pagination .page:hover { transform: scale(1.5); transition: all 200ms; }
+.details .pagination a.active { background-color: #f3f3f3; border: 0px solid blue; }
+.details .pagination-container { display: flex; padding: 0; width: 100%; }
+.details .pagination-container .column { flex: 1; }
+.details .pagination-container .home, .details .pagination-container .back, .details .pagination-container .next { cursor: pointer; opacity: 1; }
+.details .pagination-container .next { text-align: right; }
 
-.flex-space-between {
-  justify-content: space-between; }
+html, body { box-sizing: border-box; font-size: 16px; scroll-behavior: smooth; }
 
-.flex-align-center {
-  align-items: center; }
+h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0; padding: 0; }
 
-.flex-wrap {
-  flex-wrap: wrap; }
+h1 { font-size: 2.2rem; margin: 0 0 2.0rem 0; }
 
-.flex-nowrap {
-  flex-wrap: nowrap; }
+h2 { font-size: 1.8rem; margin: 0; }
 
-.align-center {
-  align-items: center; }
+h3 { font-size: 1.4rem; margin: .5rem 0; }
 
-.responsive {
-  width: 100%;
-  height: auto;
-  max-width: 600px; }
+h4 { font-size: 1.2rem; }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+h5 { font-size: 1.0rem; }
 
-/*# sourceMappingURL=app.css.map */
+h6 { font-size: .9rem; }
+
+a, a:visited, a:active { color: #14a8fc; text-decoration: none; }
+
+a:hover { color: #027cc1; text-decoration: none; }
+
+.show { display: block; -webkit-animation: fadeIn .1s; animation: fadeIn .1s; }
+
+.hidden { display: none; -webkit-animation: fadeIn .1s; animation: fadeIn .1s; }
+
+.responsive { width: 100%; height: auto; max-width: 600px; }
+
+@-webkit-keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }

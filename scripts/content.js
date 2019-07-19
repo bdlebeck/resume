@@ -1,15 +1,3 @@
-var me = {
-	my: [
-		{
-			name : "Brian Lebeck",
-			jobtitle : "Web | UI Designer",
-			company : "Surescripts",
-			school : "Oregon State University",
-			city : "Portland, Oregon"
-		}
-	]
-};
-
 var career = {
 	items: [
 		{
@@ -272,12 +260,20 @@ var education = {
 };
 
 var skill = {
-	management: [
+	business: [
 		{ name : "Software Product Design" },
 		{ name : "Business requirement mockups" },
 		{ name : "Low and high fidelity prototypes" }
 	],	
-	expertise: [
+	design: [
+		{ name : "HTML5, CSS3, LESS, SCSS, BEM" },
+		{ name : "Basic Javascript/DOM" },
+		{ name : "Responsive Layout" },
+		{ name : "UI Frameworks, Bootstrap" },
+		{ name : "Accessibility / MU2 WCAG" },
+		{ name : "Entry Angular/React, view" }
+	],	
+	development: [
 		{ name : "HTML5, CSS3, LESS, SCSS, BEM" },
 		{ name : "Basic Javascript/DOM" },
 		{ name : "Responsive Layout" },

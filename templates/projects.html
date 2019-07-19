@@ -4,13 +4,13 @@
 	{{ #items }}
 	<article class="card card-hover" page="{{id}}" id="{{ id }}">
 
-		<div class="card-header">
-			<h4 class="card-title">
+		<div class="">
+			<h4 class="">
 				{{ projectTitleLong }}
 			</h4>
 		</div>	
 	
-	   	<p class="card-description">{{ intro }}</p>
+	   	<p class="">{{ intro }}</p>
 
 	</article>	
 	{{ /items }}
@@ -18,7 +18,6 @@
 
 <script>
 	$( ".projects .card" ).click(function() {
-		//const item = this.id;
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
 		window.location='details-project.html'

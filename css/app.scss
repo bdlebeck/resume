@@ -1,10 +1,19 @@
-@import 'variables';
+$background-color:	#ffffff;
+$primary: 			#14a8fc;
+$font: 				14px;
+$font-color: 		#555555;
+
+@import url('normalize.css');
 @import 'mixins';
-@import url('design.css');
+@import 'layout';
+@import 'design';
+@import 'details';
+
 
 html,
 body {
 	box-sizing: border-box;
+	font-size: 16px;
 	scroll-behavior: smooth;
 }
 
@@ -20,7 +29,7 @@ h1 {
 }
 h2 {
 	font-size: 1.8rem;
-	margin: 1.0rem 0;
+	margin: 0;
 
 }
 h3 {
@@ -57,34 +66,6 @@ a:hover {
 	display: none;
 	-webkit-animation: fadeIn .1s;
     animation: fadeIn .1s;	
-}
-
-
-//Flex Grid
-.row {
-	@include flexbox();
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-.column {
-}
-.flex-column {
-	@include flex-direction(column);
-}
-.flex-space-between {
-	justify-content: space-between;
-}
-.flex-align-center {
-	align-items: center;
-}
-.flex-wrap {
-	flex-wrap: wrap;
-}
-.flex-nowrap {
-	flex-wrap: nowrap;
-}
-.align-center {
-	align-items: center;
 }
 
 

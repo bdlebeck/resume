@@ -1,40 +1,21 @@
-<div>
-	<a name="career"></a> 
-	<h2>Career History</h2>
 
-	{{#items}}
-	<article class="card card-hover" page="{{id}}" id="career{{ id }}">
+<a name="career"></a> 
+<h2>Career History</h2>
 
-		<div class="card-header">
-			<h4 class="card-title">
-				{{ jobTitle }}
-			</h4>
-			<span class="card-date">
-				{{ date }}
-			</span>
-		</div>		
+{{#items}}
+<article class="" page="{{id}}" id="career{{ id }}">
 
-		<span class="card-jobtitle">
-			{{ company }}
-		</span>
+	<div class="">
+		<p>
+			{{ jobTitle }} - {{ company }} - {{ date }}
+		</p>
+	</div>					
 
-		<p class="card-description hidden">
-			{{ intro }}
-		</p>				
-
-		<div class="hidden">
-		{{ #screenshots }}
-			<img src="images/{{ url }}"/>
-		{{ /screenshots }}
-		</div>
-
-	</article>
-	{{/items}}
-</div>
+</article>
+{{/items}}
 
 <script>
-	$( ".career .card" ).click(function() {
-		//const item = this.id;
+	$( ".career article" ).click(function() {
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
 		window.location='details-career.html'

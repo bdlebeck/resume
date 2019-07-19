@@ -5,7 +5,6 @@
 	    <title>Brian Lebeck Resume</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
 	    <link rel="stylesheet" href="css/normalize.css">
-	    <link rel="stylesheet" href="css/layout.css">
 	    <link rel="stylesheet" href="css/app.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -14,56 +13,86 @@
 
 		<nav>
 			<ul class="navigation" role="navigation">
-			  <li>Brian Lebeck</li>
-			  <li><a href="#">Home</a></li>
-			  <li><a href="#">About</a></li>
-			  <li><a href="#">Projects</a></li>
-			  <li><a href="#">Resume</a></li>
+			  <li><a href="index.html">Brian Lebeck</a></li>
+				<li><a id="home-btn">Home</a></li>
+				<li><a id="strength-btn">Strengths</a></li>
+			  <li><a id="career-btn">Career</a></li>
+				<li><a id="projects-btn">Projects</a></li>
+				<li><a id="education-btn">Education</a></li>
 			</ul>
-		  </nav>
+		</nav>
 
 		<main>
-			<section id="me" class="me"></section>
 
-			<div class="about row flex-wrap">
-
-				<div class="column">
-					<ul class="about__demo">
-						<li><strong>Name:</strong>Brian Lebeck</li>
-						<li><strong>Role:</strong>Web|UI Designer</li>
-						<li><strong>City:</strong>Portland, Oregon</li>
-						<li><strong>Email:</strong>bdlebeck@gmail.com</li>
-					</ul>
-				</div>
-
-				<div class="column">
-					<p class="about__intro">
-						
-					</p>
-				</div>
-				
+			<div id="section-home" class="scrollpage about-page">
+				<ul class="">
+					<li><strong>Name:</strong>Brian Lebeck</li>
+					<li><strong>Role:</strong>Web|UI Designer</li>
+					<li><strong>City:</strong>Portland, Oregon</li>
+					<li><strong>Email:</strong>bdlebeck@gmail.com</li>
+				</ul>
 			</div>
 
+			<div id="section-skills" class="scrollpage skills-page">
+					<section id="skills" class="skills"></section>
+			</div>	
 
-			<div class="career-project row flex-wrap">
-				<section id="career" class="career column"></section>
+			<div id="section-career" class="scrollpage career-page">
+				<section id="career" class="career"></section>
 			</div>
-			<div class="career-project row flex-wrap">
-				<section id="projects" class="projects column"></section>
-			</div>			
-			<div class="education-skill row flex-wrap">
-				<section id="education" class="education column"></section>
-				<section id="skills" class="skills column"></section>
+
+			<div id="section-projects" class="scrollpage projects-page">
+				<section id="projects" class="projects"></section>
 			</div>
+
+			<div id="section-education" class="scrollpage education-page">
+				<section id="education" class="education"></section>
+			</div>
+
+		
+
 		</main>
 
 	</body> 
+
+
 
 	<script type="text/javascript" src="node_modules/zepto/dist/zepto.min.js"></script>
 	<script type="text/javascript" src="node_modules/mustache/mustache.min.js" ></script>	
 	<script type="text/javascript" src="scripts/content.js" ></script>	
 	<script type="text/javascript" src="scripts/scripts.min.js" ></script>	
-	  
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+		
+	
+	<script>
+		var section1Btn = document.getElementById("home-btn"),
+				section2Btn = document.getElementById("strength-btn"),
+				section3Btn = document.getElementById("career-btn"),
+				section4Btn = document.getElementById("projects-btn");
+				section5Btn = document.getElementById("education-btn");
+
+		section1Btn.onclick = function() {
+			TweenLite.to(window, 1, {scrollTo:{y:"#section-home", offsetY:80, totalDuration: .1, autoKill:false}});
+		}
+
+		section2Btn.onclick = function() {
+			TweenLite.to(window, 1, {scrollTo:{y:"#section-skills", offsetY:80, totalDuration: .1, autoKill:false}});
+		}
+
+		section3Btn.onclick = function() {
+			TweenLite.to(window, 1, {scrollTo:{y:"#section-career", offsetY:80, totalDuration: .1, autoKill:false}});
+		}
+
+		section4Btn.onclick = function() {
+			TweenLite.to(window, 1, {scrollTo:{y:"#section-projects", offsetY:80, totalDuration: .1, autoKill:false}});
+		}	
+
+		section5Btn.onclick = function() {
+			TweenLite.to(window, 1, {scrollTo:{y:"#section-education", offsetY:80, totalDuration: .1, autoKill:false}});
+		}			
+	</script>	
 
 </html>
 
