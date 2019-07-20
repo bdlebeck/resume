@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-	$.get('templates/strength.html', function(strengthTemplate) {
-		var strengthOutput = Mustache.render(strengthTemplate, strength);
-		$('#strength').html(strengthOutput);
+	$.get('templates/skills.html', function(strengthTemplate) {
+		var strengthOutput = Mustache.render(strengthTemplate, skills);
+		$('#skills').html(strengthOutput);
 	});
 
 	$.get('templates/careers.html', function(careerTemplate) {
