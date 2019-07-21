@@ -18,7 +18,6 @@
 				<li><a id="strength-btn">Strengths</a></li>
 				<li><a id="career-btn">Career</a></li>
 				<li><a id="projects-btn">Projects</a></li>
-				<li><a id="education-btn">Education</a></li>
 			</ul>
 		</nav>
 
@@ -34,7 +33,7 @@
 			</div>
 
 			<div id="section-skills" class="scrollpage skills-page">
-					<section id="skills" class="skills"></section>
+				<section id="skills" class="skills"></section>
 			</div>	
 
 			<div id="section-career" class="scrollpage career-page">
@@ -48,8 +47,6 @@
 			<div id="section-education" class="scrollpage education-page">
 				<section id="education" class="education"></section>
 			</div>
-
-		
 
 		</main>
 
@@ -88,10 +85,7 @@
 		section4Btn.onclick = function() {
 			TweenLite.to(window, 1, {scrollTo:{y:"#section-projects", offsetY:0, totalDuration: .1, autoKill:false}});
 		}	
-
-		section5Btn.onclick = function() {
-			TweenLite.to(window, 1, {scrollTo:{y:"#section-education", offsetY:0, totalDuration: .1, autoKill:false}});
-		}			
+	
 	</script>	
 
 </html>

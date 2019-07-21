@@ -7,14 +7,15 @@ a, a.visited { color: blue; }
 
 main { background-color: transparent; margin: 0 auto; margin-top: 0px; }
 
-nav .navigation { align-items: center; display: flex; height: 0px; list-style-type: none; margin: 0; opacity: 5; padding: 0; position: absolute; top: 0; width: 100%; }
+nav { position: absolute; top: 0; width: 100%; }
+nav .navigation { align-items: center; display: flex; list-style-type: none; margin: 0 auto; padding: 0; }
 nav .navigation li:first-child { font-size: 1.4rem; margin-left: 10px; margin-right: auto; }
 nav .navigation li { color: transparent; display: block; text-align: center; }
 nav .navigation .logo { margin-right: auto; margin-left: auto; }
 nav .navigation a { color: #333333; cursor: pointer; display: block; font-weight: 400; padding: 16px 20px; text-decoration: none; transition: .5s; }
 nav .navigation a:hover { background-color: gold; color: black; }
 
-.scrollpage { background-color: #ffffff; padding: 3rem 3rem 0 3rem; height: 88vh; }
+.scrollpage { background-color: #ffffff; padding: 3rem 3rem 0 3rem; max-height: 100vh; }
 
 .scrollpage:nth-of-type(even) { background-color: #bbe6ff; }
 
@@ -24,12 +25,17 @@ nav .navigation a:hover { background-color: gold; color: black; }
 .about-page li { line-height: 1.4rem; list-style-type: none; }
 .about-page strong { display: inline-block; font-weight: 600; width: 10rem; }
 
+.skills-page { font-size: 1.2rem; }
 .skills-page .strengths-container { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between; -ms-flex-pack: space-between; }
-.skills-page .strengths-container ul { font-size: 1.4rem; margin: 0; padding: 0; line-height: 2.0rem; list-style-type: none; }
+.skills-page .strengths-container ul { margin: 0; padding: 0; line-height: 2.0rem; list-style-type: none; }
 
-.career-page section { cursor: pointer; margin-bottom: 1rem; }
-.career-page section p { font-size: 1.4rem; }
-.career-page section div:hover { background-color: aliceblue; }
+.career-page { font-size: 1.2rem; }
+.career-page article { cursor: pointer; margin-bottom: 1rem; }
+.career-page article:hover { background-color: aliceblue; }
+
+.projects-page { font-size: 1.2rem; }
+.projects-page article { cursor: pointer; margin-bottom: 1rem; }
+.projects-page article:hover { background-color: aliceblue; }
 
 .career__list { background-color: #ffffff; margin: 0; padding: 0; }
 
@@ -50,7 +56,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0; padding: 0; }
 
 h1 { font-size: 2.2rem; margin: 0 0 2.0rem 0; }
 
-h2 { font-size: 1.8rem; margin: 0; }
+h2 { font-size: 1.8rem; margin: 0 0 2rem 0; }
 
 h3 { font-size: 1.4rem; margin: .5rem 0; }
 

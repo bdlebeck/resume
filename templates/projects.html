@@ -1,20 +1,11 @@
-<div>
-	<h2>Favorite Projects</h2> 
+<h2>Favorite Projects</h2> 
 
-	{{ #items }}
-	<article class="card card-hover" page="{{id}}" id="{{ id }}">
+{{ #items }}
+<article class="card card-hover" page="{{id}}" id="{{ id }}">
+	{{ projectTitleLong }}
+</article>	
+{{ /items }}
 
-		<div class="">
-			<h4 class="">
-				{{ projectTitleLong }}
-			</h4>
-		</div>	
-	
-	   	<p class="">{{ intro }}</p>
-
-	</article>	
-	{{ /items }}
-</div>
 
 <script>
 	$( ".projects .card" ).click(function() {

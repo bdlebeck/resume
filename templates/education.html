@@ -2,23 +2,9 @@
 	<h2>Education</h2>
 	
 	{{#degrees}}
-	<article class="card">
-	
-		<div class="">
-			<h4 class="">
-				{{ title }}
-			</h4>
-			<span class="">{{ date }}</span>
-		</div>
-
-		<span class="">
-			{{ subtitle }}
-		</span>
-
-		<span class=">{{ degree }}</span>
-
-		<p class=" hidden">{{ description }}</p>
-
-	</article>
+		<article>
+			{{ title }} - {{ subtitle }}
+			<span class=">{{ degree }}</span>
+		</article>
 	{{/degrees}}
 </div>
