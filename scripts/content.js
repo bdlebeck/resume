@@ -261,17 +261,16 @@ var education = {
 
 var skill = {
 	business: [
-		{ name : "Software Product Design" },
+		{ name : "Whiteboard/wireframe user workflow" },
 		{ name : "Business requirement mockups" },
-		{ name : "Low and high fidelity prototypes" }
+		{ name : "Clickable workflow prototypes" },
+		{ name : "UX discussion" },
+		{ name : "Agile story writing" }
 	],	
 	design: [
-		{ name : "HTML5, CSS3, LESS, SCSS, BEM" },
-		{ name : "Basic Javascript/DOM" },
-		{ name : "Responsive Layout" },
-		{ name : "UI Frameworks, Bootstrap" },
-		{ name : "Accessibility / MU2 WCAG" },
-		{ name : "Entry Angular/React, view" }
+		{ name : "Page/workflow mockups" },
+		{ name : "Styleguides" },
+		{ name : "User Experience" }
 	],	
 	development: [
 		{ name : "HTML5, CSS3, LESS, SCSS, BEM" },
@@ -279,7 +278,6 @@ var skill = {
 		{ name : "Responsive Layout" },
 		{ name : "UI Frameworks, Bootstrap" },
 		{ name : "Accessibility / MU2 WCAG" },
-		{ name : "Entry Angular/React, view" }
 	]
 };
 

@@ -7,13 +7,13 @@
 	    <link rel="stylesheet" href="css/normalize.css">
 	    <link rel="stylesheet" href="css/app.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	</head>
 	<body id="body" class="home">
 
 		<nav>
 			<ul class="navigation" role="navigation">
-				<li><a href="index.html">Brian Lebeck</a></li>
 				<li><a id="home-btn">Home</a></li>
 				<li><a id="strength-btn">Strengths</a></li>
 				<li><a id="career-btn">Career</a></li>
@@ -23,30 +23,31 @@
 
 		<main>
 
-			<div id="section-home" class="scrollpage about-page">
-				<ul class="">
-					<li><strong>Name:</strong>Brian Lebeck</li>
-					<li><strong>Role:</strong>Web|UI Designer</li>
-					<li><strong>City:</strong>Portland, Oregon</li>
-					<li><strong>Email:</strong>bdlebeck@gmail.com</li>
-				</ul>
+			<div id="section-home" class="scrollpage about-container">
+				<div class="content">
+					<ul class="">
+						<li>Brian Lebeck</li>
+						<li>Web|UI Designer</li>
+						<li>Portland, Oregon</li>
+					</ul>
+				</div>
 			</div>
 
-			<div id="section-skills" class="scrollpage skills-page">
-				<section id="skills" class="skills"></section>
-			</div>	
+			<div id="section-skills" class="skills-container scrollpage"></div>
+			<div class="quote1-container">
+				<div class="content">
+					<p>"To create the HTML, CSS, and presentational JavaScript code that powers web products’ user interfaces."</p>
+				</div>
+			</div>				
+			<div id="section-career" class="scrollpage career-container"></div>
+			<div id="section-projects" class="scrollpage projects-container"></div>
+			<div class="quote2-container">
+					<div class="content">
+						<p>"To architect resilient CSS code with a focus on modularity, flexibility, compatibility, and extensibility."</p>
+					</div>
+				</div>			
+			<div id="section-education" class="scrollpage education-container"></div>
 
-			<div id="section-career" class="scrollpage career-page">
-				<section id="career" class="career"></section>
-			</div>
-
-			<div id="section-projects" class="scrollpage projects-page">
-				<section id="projects" class="projects"></section>
-			</div>
-
-			<div id="section-education" class="scrollpage education-page">
-				<section id="education" class="education"></section>
-			</div>
 
 		</main>
 
@@ -71,19 +72,19 @@
 				section5Btn = document.getElementById("education-btn");
 
 		section1Btn.onclick = function() {
-			TweenLite.to(window, 1, {scrollTo:{y:"#section-home", offsetY:0, totalDuration: .1, autoKill:false}});
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-home", offsetY:0, totalDuration: .3, autoKill:false}});
 		}
 
 		section2Btn.onclick = function() {
-			TweenLite.to(window, 1, {scrollTo:{y:"#section-skills", offsetY:0, totalDuration: .1, autoKill:false}});
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-skills", offsetY:0, totalDuration: .3, autoKill:false}});
 		}
 
 		section3Btn.onclick = function() {
-			TweenLite.to(window, 1, {scrollTo:{y:"#section-career", offsetY:0, totalDuration: .1, autoKill:false}});
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-career", offsetY:0, totalDuration: .3, autoKill:false}});
 		}
 
 		section4Btn.onclick = function() {
-			TweenLite.to(window, 1, {scrollTo:{y:"#section-projects", offsetY:0, totalDuration: .1, autoKill:false}});
+			TweenLite.to(window, .3, {scrollTo:{y:"#section-projects", offsetY:0, totalDuration: .3, autoKill:false}});
 		}	
 	
 	</script>	

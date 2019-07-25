@@ -1,14 +1,17 @@
-<h2>Favorite Projects</h2> 
+<div class="content">
+	<h2>Favorite Projects</h2> 
 
-{{ #items }}
-<article class="card card-hover" page="{{id}}" id="{{ id }}">
-	{{ projectTitleLong }}
-</article>	
-{{ /items }}
-
+	<div>
+		{{ #items }}
+		<article class="" page="{{id}}" id="{{ id }}">
+			{{ projectTitleLong }}
+		</article>	
+		{{ /items }}
+	</div>
+</div>
 
 <script>
-	$( ".projects .card" ).click(function() {
+	$( ".projects-container article" ).click(function() {
 		var item = this.getAttribute("page");
 		localStorage.setItem('current', item); 
 		window.location='details-project.html'
